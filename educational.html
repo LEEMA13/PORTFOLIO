@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certification</title>
+    <style>
+      body {
+        background-color: #e6dccf;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .image-container {
+        border: 5px solid black;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: white;
+      }
+      img {
+        width: 300px;
+        height: auto;
+      }
+      .buttons-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      .button {
+        background-color: black;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        width: 250px;
+        text-align: center;
+      }
+      .button:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CERTIFICATION</h1>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/CERTIFICATION.jpg" alt="Certification" />
+      </div>
+      <div class="buttons-container">
+        <button class="button" onclick="location.href='pdf/Oracle.pdf'">
+          ORACLE
+        </button>
+        <button
+          class="button"
+          onclick="location.href='pdf/SLeemarose.mongodb.1.pdf'"
+        >
+          JS.NODE
+        </button>
+        <button class="button" onclick="openPDF('graduation.pdf')">
+          GRADUATION
+        </button>
+        <button class="button" onclick="openPDF('tableau.pdf')">TABLEAU</button>
+      </div>
+    </div>
+    <script>
+      function openPDF(pdfPath) {
+        window.open(pdfPath, "_blank");
+      }
+    </script>
+  </body>
+</html>

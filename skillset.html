@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Set</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3ccfa;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 30px 50px;
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+
+      .button-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .button-grid .btn {
+        flex: 1 1 45%;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .button-grid .btn:hover {
+        background-color: #333;
+      }
+
+      .bottom-btn {
+        margin-top: 30px;
+        padding: 20px 50px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .bottom-btn:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SKILL SET</h1>
+      <div class="button-grid">
+        <a href="technical.html" class="btn" onclick="goTo('technical')"
+          >TECHNICAL</a
+        >
+        <a href="nontech.html" class="btn" onclick="goTo('nontechnical')">
+          NON-TECHNICAL
+        </a>
+        <a href="educational.html" class="btn" onclick="goTo('language')"
+          >EDUCATION</a
+        >
+        <a href="strength.html" class="btn" onclick="goTo('strength')"
+          >STRENGTH</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function goTo(module) {
+        switch (module) {
+          case "technical":
+            window.location.href = "technical.html";
+            break;
+          case "nontechnical":
+            window.location.href = "nontechnical.html";
+            break;
+          case "language":
+            window.location.href = "extra-language.html";
+            break;
+          case "strength":
+            window.location.href = "strength.html";
+            break;
+          case "education":
+            window.location.href = "education.html";
+            break;
+          default:
+            alert("Page not found.");
+        }
+      }
+    </script>
+  </body>
+</html>

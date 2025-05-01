@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Technical</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3ccfa;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 30px 50px;
+        max-width: 1000px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .image-box img {
+        width: 300px;
+        height: auto;
+        border: 3px solid black;
+        border-radius: 4px;
+      }
+
+      .button-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .button-column .btn {
+        padding: 15px 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 220px;
+      }
+
+      .button-column .btn:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>NON-TECHNICAL</h1>
+      <div class="content">
+        <div class="image-box">
+          <img src="images/REGIS.jpg" alt="Anime Character" />
+        </div>
+        <div class="button-column">
+          <a href="painting.html" class="btn" onclick="goTo('technical')"
+            >PAINTING</a
+          >
+          <a href="drawing.html" class="btn" onclick="goTo('nontechnical')"
+            >DRAWING</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function goTo(page) {
+        switch (page) {
+          case "technical":
+            window.location.href = "technical.html";
+            break;
+          case "nontechnical":
+            window.location.href = "nontechnical.html";
+            break;
+          default:
+            alert("Page not found.");
+        }
+      }
+    </script>
+  </body>
+</html>

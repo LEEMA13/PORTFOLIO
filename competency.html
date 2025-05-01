@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Competency</title>
+    <style>
+      body {
+        background-color: #ede5dd;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .image-container img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .text-container {
+        text-align: center;
+      }
+      .text-container h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: cursive;
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .button {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-family: cursive;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/competency.jpg" alt="Drawing Image" />
+      </div>
+      <div class="text-container">
+        <h1>Technical Competency</h1>
+        <div class="button-container">
+          <a
+            href="https://python-project-kohl.vercel.app/"
+            class="button"
+            onclick="location.href='pdf/happy data.pdf'"
+          >
+            PYTHON
+          </a>
+          <button class="button" onclick="location.href='pdf/happy data.pdf'">
+            TABLEAU
+          </button>
+          <a
+            href="https://leema-rose-s.vercel.app/"
+            class="button"
+            onclick="alert('HTML, CSS, JavaScript Clicked!')"
+          >
+            HTML, CSS, JAVA SCRIPT
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

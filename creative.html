@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Designer</title>
+    <style>
+      body {
+        background-color: #e8dfcf;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: cursive;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .image-container img {
+        width: 300px;
+        border: 3px solid black;
+      }
+      .buttons {
+        margin-top: 20px;
+      }
+      .btn {
+        display: block;
+        width: 250px;
+        padding: 15px;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-family: cursive;
+      }
+      .btn:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CREATIVE DESIGNER</h1>
+      <div class="image-container">
+        <img src="images/DESINER.avif" alt="Creative Design" />
+      </div>
+      <div class="buttons">
+        <button class="btn" onclick="navigate('canva.html')">CANVA</button>
+        <button
+          class="btn"
+          onclick="location.href='blender/tea shop project.blend'"
+        >
+          BLENDER 3D
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function navigate(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>
